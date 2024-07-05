@@ -165,6 +165,8 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 		- Operator associativity
 		- Strict Equality Operator(===) checks both type and value
 	* Conditional statements
+        - Truthy, Falsy
+        - Ternary operator(?)
 	* Loops(for,while,nested)
 	* Arrays, Objects, Functions
 	* Automatic Semi-colon Insertion
@@ -185,6 +187,16 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 [Ecmascript reference](https://tc39.es/ecma262/)
 
 [Official Unicode emoji list](https://unicode.org/emoji/charts/full-emoji-list.html#1f600)
+
+[Javascript comparison operators](https://www.javascripttutorial.net/javascript-comparison-operators/)
+
+[Javascript truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+
+[Javascript falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+
+[Javascript conditional statements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+
+[Javascript ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
 
 
 ## Web Libraries and Frameworks
