@@ -157,13 +157,42 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 
 ## Javascript
 
+    * European Computer Manufacturers Association and ECMAScript
+	* VSCode Code Runner
+	* Data types(string, number, boolean, biging, symbol)
+	* Operators(=, +, !)
+	    - Operator precedence
+		- Operator associativity
+		- Strict Equality Operator(===) checks both type and value
+	* Conditional statements
+	* Loops(for,while,nested)
+	* Arrays, Objects, Functions
+	* Automatic Semi-colon Insertion
     * Script
     * XHR 
+
+
+### Documentation
+
+[Learn Javascript](https://web.dev/learn/javascript)
+
+[Javascript operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
+
+[Javascript primiteves](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
+
+[Javascript operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
+
+[Ecmascript reference](https://tc39.es/ecma262/)
+
+[Official Unicode emoji list](https://unicode.org/emoji/charts/full-emoji-list.html#1f600)
+
 
 ## Web Libraries and Frameworks
 
     * SPA(Single-Page Application)
-    
+
+### JQuery
+
 ### React
 
     * A library
