@@ -225,7 +225,9 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 
 [Javascript undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
+[Javascript scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 
+[Javascript functional programming](https://www.toptal.com/javascript/functional-programming-javascript)
 
 ## Web Libraries and Frameworks
 

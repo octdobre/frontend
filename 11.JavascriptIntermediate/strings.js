@@ -22,3 +22,11 @@ console.log(greet.concat(person));
 console.log(greet.charAt(0));
 console.log("He".concat("llo").concat("World"));
 console.log(greet.split('l'));
+
+//string interpolation
+
+var birthDayName = "Bill";
+var birthdayMessage = `Happy Birthday ${birthDayName}`;
+
+console.log(birthdayMessage);
+
