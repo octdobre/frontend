@@ -160,15 +160,24 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
     * European Computer Manufacturers Association and ECMAScript
 	* VSCode Code Runner
 	* Data types(string, number, boolean, biging, symbol)
+        - Iterable: Array and Strings
 	* Operators(=, +, !)
 	    - Operator precedence
 		- Operator associativity
 		- Strict Equality Operator(===) checks both type and value
+        - typeof
 	* Conditional statements
         - Truthy, Falsy
         - Ternary operator(?)
 	* Loops(for,while,nested)
-	* Arrays, Objects, Functions
+	* Arrays, Functions
+    * Objects
+        - Dot notation
+        - Bracket notation
+        - Comma-delimited key-value pairs
+    * Error Handling
+        - try catch
+        - throw keyword
 	* Automatic Semi-colon Insertion
     * Script
     * XHR 
@@ -181,6 +190,8 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 [Javascript operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 
 [Javascript primiteves](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
+
+[Javascript strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 
 [Javascript operator precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence)
 
@@ -197,6 +208,23 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 [Javascript conditional statements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
 
 [Javascript ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator)
+
+[Javascript arrays](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays)
+
+[Javascript functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+
+[Javascript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+
+[Javascript try catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+[Javascript iterable protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols)
+
+[Javascript Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+[Javascript null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors)
+
+[Javascript undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
 
 
 ## Web Libraries and Frameworks
