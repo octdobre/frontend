@@ -161,6 +161,7 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 	* VSCode Code Runner
 	* Data types(string, number, boolean, biging, symbol)
         - Iterable: Array and Strings
+        - Template Literals/String interpolation/Variable interpolation
 	* Operators(=, +, !)
 	    - Operator precedence
 		- Operator associativity
@@ -169,19 +170,62 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 	* Conditional statements
         - Truthy, Falsy
         - Ternary operator(?)
-	* Loops(for,while,nested)
-	* Arrays, Functions
+    * Arrays
+        - Spread operator
+        - Rest operator
+    * Functions
+        - arrow function
+	* Loops(for, while)
+        - for-of
+        - for-in
+        - .forEach
+        - filter
+        - map
+    * Data structures
+        - Set
+        - Map
+        - Queue
+        - Linked lists
+        - Trees
+        - Graphs
     * Objects
         - Dot notation
         - Bracket notation
         - Comma-delimited key-value pairs
+        - Classes
+        - new keyword
+        - Prototype
+        - Destructuring
+        - Object.keys(), Object.entries()
     * Error Handling
         - try catch
         - throw keyword
+    * DOM Manipulation
+        - document object
+            - getElementById
+            - querySelector
+            - innerText
+            - appendChild
+        - Event handlers
+    * Modules(ES6)
+        - CommonJs(NodeJs)
 	* Automatic Semi-colon Insertion
-    * Script
-    * XHR 
-
+    * Regular expressions
+    * JSON.parse
+    * XHR
+    * Node.js & npm
+    * Testing
+        - testing paradigms
+            - Red-green-refactor cycle
+            - Test-driven development
+        - Testing types
+            - e2e testing(Webdriverjs, Protractor, Cypress)
+            - integration testing(React testing library, Enzyme)
+            - unit testing(Jest, Jasmine, Mocha, Karma, qUnit)
+        - Jest by Meta
+            - code coverage
+            - mocking
+            - snapshot testing
 
 ### Documentation
 
@@ -228,6 +272,32 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 [Javascript scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
 
 [Javascript functional programming](https://www.toptal.com/javascript/functional-programming-javascript)
+
+[Javascript oop](https://css-tricks.com/the-flavors-of-object-oriented-programming-in-javascript/)
+
+[Javascript regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
+
+[Javascript template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+
+[Javascript arrow function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+[Javascript spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+[Javascript rest operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+
+[Javascript dynamic and weak types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+
+[Javascript modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+
+[Javascript DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+
+[Javascript event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
+
+[Javascript working with JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+
+[Jest javascript testing library](https://jestjs.io/)
+
+[Cypress javascript testing library](https://www.cypress.io/)
 
 ## Web Libraries and Frameworks
 
