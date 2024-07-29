@@ -149,3 +149,105 @@ sftp-config.json
 # Visual Studio Code - https://code.visualstudio.com/
 .settings/
 .vscode/
+.vs/
+*.[Cc]ache
+
+## Visual Studio exclude
+# User specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.pfx
+*.publishsettings
+
+# Web
+node_modules/
+wwwroot
+
+# Build results
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ebugPS/
+[Rr]eleasePS/
+[Rr]elease/
+[Rr]eleases/
+dlldata.c
+*_i.c
+*_p.c
+*_i.h
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+project.lock.json
+artifacts/
+csx/
+*.build.csdef
+Generated_Code/
+
+#Programatic
+*.exe
+*.dll
+*.pdb
+*.jar
+*.bin
+*.dat
+*.db3
+*.lib
+*.msi
+*.pml
+
+# MSTest
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*.VisualState.xml
+TestResult.xml
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Release results
+publish/
+*.[Pp]ublish.xml
+*.azurePubxml
+*.publishproj
+PublishScripts/
+
+# NuGet Packages
+*.nupkg
+**/packages/*
+*.nuget.props
+*.nuget.targets
