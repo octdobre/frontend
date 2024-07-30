@@ -131,7 +131,7 @@ Book: `HTML and CSS: Design and build websites by Jon Duckett`
         - Infixes
             - Responsive Breakpoints(sm, md, lg, xl, xxl)
         - Modifiers
-            - alert-primary => primary is the modifier
+            - alert-primary => `primary` key-word is the modifier
         - 12-Columns Grid-System
             - Fluid or Fixed
         - `Container` root element
