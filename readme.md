@@ -58,6 +58,20 @@
 
 [Overview of HTTP Status codes](https://http.dev/status)
 
+[HTML Meta Tags](https://www.dofactory.com/html/metatags)
+
+[Semantic Elements Explained - HTML5](https://www.freecodecamp.org/news/semantic-html5-elements/)
+
+[Social Media Card - Open Graph Protocol](https://www.digitalocean.com/community/tutorials/how-to-add-twitter-card-and-open-graph-social-metadata-to-your-webpage-with-html)
+
+[Essential social media tags](https://css-tricks.com/essential-meta-tags-social-media/)
+
+[Bootstrap with HTML5](https://www.bootstrapdash.com/blog/use-bootstrap-with-html)
+
+[Email marketing](https://www.vandelaydesign.com/ultimate-guide-email-marketing/)
+
+[Coding a barebones newsletter](https://www.vandelaydesign.com/newsletter-tutorial/)
+
 Book: `Introduction to Networking by Dr.Charles R Severance`
 
 ## HTML(Hyper-Text Markup Language)
@@ -74,6 +88,14 @@ Book: `Introduction to Networking by Dr.Charles R Severance`
     * DOM(Document Object Model)
     * Elements
         - Attribute
+        - Semantic Tags
+            - header, nav, main , footer
+            - article, section
+    * Metadata Tags
+        - SEO
+            - <meta name="title" content="your Site Name">
+        - Open Graph Protocol - Social Media Cards
+            - <meta property="og:title" content="your Site Name">
     * Web accessibility
         - WAI(Web accessibility initiative)
         - ARIA Specification
