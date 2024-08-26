@@ -49,6 +49,7 @@ app.UseStaticFiles();
 // Endpoints
 app.AddWeatherApi();
 app.AddMoviesApi();
+app.AddUserApi();
 
 app.UseRouting();
 

@@ -99,15 +99,33 @@ Book: `Introduction to Networking by Dr.Charles R Severance`
     * Web accessibility
         - WAI(Web accessibility initiative)
         - ARIA Specification
+    * Forms
+        - input types
+        - required, minlenght, maxlenght keywords
+        - fieldset, input type="radio"
 
 ### Documentation
 [Overview of HTML Elements](https://web.dev/learn/html/overview)
 
 [HTML Forms by Mozila](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
 
+[Client-Side Forms validation](https://www.sitepoint.com/client-side-form-validation-html5/)
+
+[Form validation examples](https://www.the-art-of-web.com/html/html5-form-validation/)
+
+[Sending form data](https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data)
+
 [DOM(Document Object Model) RFC Document](https://www.w3.org/TR/WD-DOM/introduction.html)
 
 [ARIA](https://w3c.github.io/html-aria/)
+
+[Sample audio and video](https://sample-videos.com/index.php#sample-mp4-video)
+
+[Embeding modern media](https://html.com/media/)
+
+[iFrames](https://studio.support.brightcove.com/publish/publishing/choosing-correct-embed-code.html)
+
+[HTML Canvas](https://www.tutorialrepublic.com/html-tutorial/html5-canvas.php)
 
 Book: `HTML and CSS: Design and build websites by Jon Duckett` 
 
