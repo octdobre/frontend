@@ -1,0 +1,9 @@
+#middle {
+    display: inline;
+    color:red;
+}
+
+#middle2 {
+    display: block;
+    color:green;
+}
