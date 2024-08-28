@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Example</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Flex container is one dimentional.</h1>
+        <h2>Items flow along the vertical axis by default and when out of space move to to the next row.</h2>
+        <p>
+            justify-content. For item alignment on main axis.<br>
+            align-items. For item alignment on cross axis.<br>
+            align-self. For unique flex items on cross axis.<br>
+            align-content. Used for packing flex lines and control over space.
+        </p>
+
+      <div>
+        <h1>No flexbox</h1>
+        <h2>Display is block by default. Items align on a column like blocks on top of each other.</h2>
+        <div class="container-size container_color">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex Default behaviour</h1>
+        <h2>Items align on a row called the main axis.</h2>
+        <h2>Item width 50px and height 50px.</h2>
+        <div class="container-size container_color" style="display: flex;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Items 100% width</h1>
+        <div class="container-size container_color" style="display: flex;">
+            <div class="item-width-100 item-fixed-50-height item-red"> </div>
+            <div class="item-width-100 item-fixed-50-height item-blue"> </div>
+            <div class="item-width-100 item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Items 100% width and height</h1>
+        <div class="container-size container_color" style="display: flex;">
+            <div class="item-width-100 item-height-100 item-red"> </div>
+            <div class="item-width-100 item-height-100 item-blue"> </div>
+            <div class="item-width-100 item-height-100 item-green"> </div>
+        </div>
+      </div>
+
+
+      <div>
+        <h1>Flex units</h1>
+        <h2>Items align on a row. Item takes up units of spaces;</h2>
+        <div class="container-size container_color" style="display: flex;">
+            <div class="item-width-100 item-height-100 item-red flex-unit-1"> </div>
+            <div class="item-width-100 item-height-100 item-blue flex-unit-2"> </div>
+            <div class="item-width-100 item-height-100 item-green flex-unit-1"> </div>
+        </div>
+      </div>
+
+
+      <div>
+        <h1>Justify Flex Start</h1>
+        <div class="container-size container_color" style="display: flex; justify-content: flex-start;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify Flex End</h1>
+        <div class="container-size container_color" style="display: flex; justify-content: flex-end;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+
+      <div>
+        <h1>Justify Spaced Evenly</h1>
+        <div class="container-size container_color" style="display: flex; justify-content: space-evenly;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify Spaced Between</h1>
+        <div class="container-size container_color" style="display: flex; justify-content: space-between">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+
+      <div>
+        <h1>Justify Center</h1>
+        <div class="container-size container_color" style="display: flex; justify-content: center;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+      
+
+      <div>
+        <h1>Justify Center Align Center</h1>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: center; align-items: center;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify Center Align End</h1>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: center; align-items: flex-end;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex direction column Justify Center Align Center </h1>
+        <h2>Items align on the cross axis;</h2>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex direction column Justify Center Align End </h1>
+        <h2>Items align on the cross axis;</h2>
+        <h2>Columns aligned left to right </h2>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: center; align-items: flex-end; flex-direction: column;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex gap </h1>
+        <div class="container-size container_color" 
+        style="display: flex; gap: 1em;;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex wrap</h1>
+        <h2>Items go to the next row when there is no more space available.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> 1</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> 2</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> 3</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> 4</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> 5</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> 6</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> 7</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> 8</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> 9</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align content</h1>
+        <h2>Flex wrap unlocks a new property called align content</h2>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: flex-start; flex-wrap: wrap; align-content: flex-start;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> 1</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> 2</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> 3</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> 4</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> 5</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> 6</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green">7 </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> 8</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> 9</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align self</h1>
+        <h2>Allows individual item to align itself</h2>
+        <div class="container-size container_color" 
+        style="display: flex; ">
+            <div class="item-fixed-50-width item-fixed-50-height item-red" style="align-self: flex-end;"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Order</h1>
+        <h2>Allows individual item to order themselves</h2>
+        <div class="container-size container_color" 
+        style="display: flex; ">
+            <div class="item-fixed-50-width item-fixed-50-height item-red" style="order:3"> 1</div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue">2 </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green">3 </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex grow</h1>
+        <h2>Allows individual item to grow if there is space to do so.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; ">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green" style="flex-grow: 1;"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex grow</h1>
+        <h2>Slowly shrink the browser window to observe the behaviour.</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+            <div class="item-fixed-50-width item-fixed-50-height item-red"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-blue"> </div>
+            <div class="item-fixed-50-width item-fixed-50-height item-green" style="flex-grow: 1;"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex grow fixed</h1>
+        <h2>Item refuses to grow</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+            <div class=" item-fixed-50-height item-red" style="width: 400px;"> </div>
+            <div class=" item-fixed-50-height item-blue" style="width: 400px;"> </div>
+            <div class=" item-fixed-50-height item-green" style="width: 200px; flex-grow: 0;"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex shrink</h1>
+        <h2>Defines how fast an item shrinks compared to others.</h2>
+        <h2>Slowly shrink the browser window to observe the behaviour.</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+            <div class="item-fixed-50-height item-red" style="width: 400px;"> </div>
+            <div class="item-fixed-50-height item-blue" style="width: 400px;"> </div>
+            <div class="item-fixed-50-height item-green" style="width: 400px; flex-shrink: 5;"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex shrink fixed</h1>
+        <h2>Now the item is refusing to shrink.</h2>
+        <h2>Slowly shrink the browser window to observe the behaviour.</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+            <div class="item-fixed-50-height item-red" style="width: 400px;"> </div>
+            <div class="item-fixed-50-height item-blue" style="width: 400px;"> </div>
+            <div class="item-fixed-50-height item-green" style="width: 400px; flex-shrink: 0;"> </div>
+        </div>
+      </div>
+
+
+      <div>
+        <h1>Flex shorthand</h1>
+        <h2>Flex property defines grow, shrink and baseline.</h2>
+        <h2>flex: 0 1 400px;</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+            <div class="item-fixed-50-height item-red" style="width: 400px;"> </div>
+            <div class="item-fixed-50-height item-blue" style="width: 400px;"> </div>
+            <div class="item-fixed-50-height item-green" style="width: 400px; flex: 0 1 400px;"> </div>
+        </div>
+      </div>
+    </body>
+</html>

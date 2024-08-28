@@ -160,12 +160,22 @@ Book: `HTML and CSS: Design and build websites by Jon Duckett`
     * Responsive Design
         - Media Queries
         - Logical Pixel
-        - Flexible Grids
-            - Columns
-            - Gutters
-            - Margins
+        - Flexbox
+            - Good for simple 1D alignament
+            - Either rows(main axis) or columns(cross axis)
+            - justify-content, align-content
+            - Flex direction
+            - Flex grow, shrink, basis
+            - Flex wrap, align-content
+            - Align-self
         - Fluid Images
         - Responsive Grid
+            - Good for complex page layout using a 2D alignament
+            - Both rows and columns
+            - Line is Grid track, Area is Grid Area
+            - 12 or 6 track layout frameworks
+            - Cell
+            - Gutter
     * Bootstrap
         - Reusable Components
         - Infixes
@@ -177,9 +187,24 @@ Book: `HTML and CSS: Design and build websites by Jon Duckett`
         - `Container` root element
 
 ### Documentation
+
+[Selectors](https://www.geeksforgeeks.org/10-css-selectors-every-developer-should-know/)
+
 [Box Model](https://web.dev/learn/css/box-model)
 
 [Document Flow and CSS Layout](https://web.dev/learn/css/layout)
+
+[Flexbox terminology](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-basics-and-terminology)
+
+[Flexbox visual guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[Flexbox video overview](https://www.youtube.com/watch?v=phWxA89Dy94)
+
+[Grid visual guide](https://learncssgrid.com/)
+
+[Grid video overview](https://www.youtube.com/watch?v=EiNiSFIPIQE)
+
+[Grid podcast](https://web.dev/learn/css/grid/)
 
 [Bootstrap](https://getbootstrap.com/docs)
 
@@ -366,3 +391,5 @@ Book: `Responsive Web Design with HTML5 and CSS  by Ben Frain`
 [Chrome Developer tools](https://developer.chrome.com/docs/devtools/overview/)
 
 [Firefox Developer tools](https://firefox-source-docs.mozilla.org/devtools-user/index.html)
+
+Book: `You Don't Know JS Yet - Kyle Simpson`

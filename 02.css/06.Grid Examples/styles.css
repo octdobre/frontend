@@ -1,0 +1,156 @@
+
+/*baseline example*/
+.baseline main {
+    display:grid;
+    grid-template-areas: 
+    "topbar topbar  topbar"
+    "ads    content sidebar"
+    "footer footer  footer";
+
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 50px 1fr 70px;
+    gap: 0 50px;
+    justify-items: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.baseline header {
+    grid-area: topbar;
+    background-color: chartreuse;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.baseline aside {
+    grid-area: ads;
+    background-color: chocolate;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.baseline article {
+    grid-area: content;
+    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.baseline nav {
+    grid-area: sidebar;
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.baseline footer {
+    grid-area: footer;
+    background-color: firebrick;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}   
+
+/*showcase example*/
+.showcase-grid {
+    display:grid;
+    height: 100%;
+    grid-template-rows: auto 1fr auto;
+}
+
+.showcase-grid header{
+    background-color: #2c3333;
+    text-align: center;
+    padding: 2em;
+}
+
+.showcase-grid main{
+    background-color: #395B64;
+    text-align: center;
+    padding: 2em;
+}
+
+.showcase-grid footer{
+    background-color: #A5C9CA;
+    text-align: center;
+    padding: 2em;
+}
+
+/*showcase grid 12 example*/
+
+.showcase-grid12{
+    height: 100%;
+}
+
+.showcase-grid12 .parent {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 100%;
+}
+
+.showcase-grid12 .parent .segment {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    grid-template-rows: 100px;
+}
+
+.showcase-grid12 .parent .twelve {
+    background-color: lightseagreen;
+    grid-column: 1/ span 12;
+}
+
+.showcase-grid12 .parent .eight {
+    background-color: bisque;
+    grid-column: 5/ span 8;
+}
+
+.showcase-grid12 .parent .four {
+    background-color: lightblue;
+    grid-column: 1/ span 4;
+}
+
+.showcase-grid12 .parent .six {
+    background-color: lightsteelblue;
+    grid-column: 5/ span 6;
+}
+
+.showcase-grid12 .parent .seven {
+    background-color: lightcoral;
+    grid-column: 3/ span 7;
+}
+
+/*container showcase*/
+
+.container {
+    width: 320px;
+    height: 240px;
+    background-color: beige;
+    outline: 1px solid firebrick;
+
+    display:grid;
+}
+
+.item {
+    background-color: #42b883;
+    border:10px solid #347474;
+    border-radius: 10px;
+    margin:0;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item p {
+    font-size: 1.5em; /* Increase the font size for the number */
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white; /* Text color */
+    margin: 0; /* Remove default margin */
+}

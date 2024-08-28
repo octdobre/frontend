@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Examples</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <h2>Simple Grid Example</h2>
+            <div style="width: 640px; height: 480px; outline: 2px solid firebrick;">
+                <div class="showcase-grid">
+                    <header>Delicious Donuts</header>
+                    <main>Menu</main>
+                    <footer>About Us</footer>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Showcase with  Grid 12 system</h2>
+            <div style="width: 640px; height: 480px; outline: 2px solid firebrick;">
+                <div class="showcase-grid12">
+                    <div class="parent">
+                        <div class="sergment twelve">Span 12</div>
+                        <div class="sergment eight">Span 8</div>
+                        <div class="sergment four">Span 4</div>
+                        <div class="sergment six">Span 6</div>
+                        <div class="sergment seven">Span 7</div>
+                        <div class="sergment twelve">Span 12</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="baseline">
+            <h2>Grid Template example</h2>
+            <div style="width: 640px; height: 480px; outline: 2px solid firebrick;">
+                <main>
+                    <header>Header</header>
+        
+                    <article>Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        industry. Lorem Ipsum has been the industry's standard dummy text ever
+                         since the 1500s, when an unknown printer took a galley of type and 
+                         scrambled it to make a type specimen book. It has survived not only
+                          five centuries, but also the leap into electronic typesetting, 
+                          remaining essentially unchanged. It was popularised in the 1960s 
+                          with the release of Letraset sheets containing Lorem Ipsum passages,
+                           and more recently with desktop publishing software like Aldus PageMaker 
+                           including versions of Lorem Ipsum.</article>
+                    <aside>Author</aside>
+                    <nav>Sidebar</nav>
+        
+                    <footer>Footer</footer>
+                </main>
+            </div>
+        </div>
+
+        <br>
+        <h1>Various grid examples.</h1>
+        <h3>grid-template-rows/columns used to define numeber of rows or columns.</h3>
+        <h3>grid-row/columns: 1 / 3  (starting line, ending line)</h3>
+        <h3>grid with 6 rows, first line is 1 and last line is 7.</h3>
+        <h3>grid-row/columns: span 2  (wherever you are span yourself 2 cells)</h3>
+        <h3>grid-area: row-start col-start row-end col-end  (span across rows and columns)</h3>
+        <h3>Adding a new cell to the grid creates a new bigger grid that doesnt inherit the properties.</h3>
+        <h3>grid-auto-rows allows for newly added elements to create an appropiate grid layout.</h3>
+        <div style="display: flex; justify-content: flex-start; flex-wrap: wrap; align-content: flex-start; gap:10px;">
+            <div>
+                <h3>3 Rows</h3>
+                <div class="container"
+                style="grid-template-rows: repeat(3, minmax(0, 1fr));">
+                    <div class="item"><p>1</p></div>
+                    <div class="item"><p>2</p></div>
+                    <div class="item"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>3 Columns</h3>
+                <div class="container"
+                style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+                    <div class="item"><p>1</p></div>
+                    <div class="item"><p>2</p></div>
+                    <div class="item"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>3 Columns with gap</h3>
+                <div class="container"
+                style="
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 1em;">
+                    <div class="item"><p>1</p></div>
+                    <div class="item"><p>2</p></div>
+                    <div class="item"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>3 Rows and 3 Columns with gap</h3>
+                <div class="container"
+                style="
+                grid-template-rows: repeat(3, minmax(0, 1fr));
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 1em;">
+                    <div class="item"><p>1</p></div>
+                    <div class="item"><p>2</p></div>
+                    <div class="item"><p>3</p></div>
+                    <div class="item"><p>1</p></div>
+                    <div class="item"><p>2</p></div>
+                    <div class="item"><p>3</p></div>
+                    <div class="item"><p>1</p></div>
+                    <div class="item"><p>2</p></div>
+                    <div class="item"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>3 Columns 3 Rows positioned different</h3>
+                <div class="container"
+                style="
+                grid-template-rows: repeat(3, minmax(0, 1fr));
+                grid-template-columns: repeat(3, minmax(0, 1fr));">
+                    <div class="item" style="grid-row:1 / 1; grid-column: 1/ 2;"><p>1</p></div>
+                    <div class="item" style="grid-row:2 / 2; grid-column: 1/3;"><p>2</p></div>
+                    <div class="item" style="grid-row:2 / 4; grid-column: 3/3;"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>6 Columns 6 Rows aligned with span</h3>
+                <div class="container"
+                style="
+                grid-template-rows: repeat(6, minmax(0, 1fr));
+                grid-template-columns: repeat(6, minmax(0, 1fr));">
+                    <div class="item" style="grid-row: span 2; grid-column:span 2;"><p>1</p></div>
+                    <div class="item" style="grid-row: span 2; grid-column:span 4;"><p>2</p></div>
+                    <div class="item" style="grid-row: span 3; grid-column:span 4;"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>6 Columns 6 Rows aligned with area</h3>
+                <div class="container"
+                style="
+                grid-template-rows: repeat(6, minmax(0, 1fr));
+                grid-template-columns: repeat(6, minmax(0, 1fr));">
+                    <div class="item" style="grid-area: 1 / 1 / 3 / 3;"><p>1</p></div>
+                    <div class="item" style="grid-area: 3 / 3 / 1 / 7;"><p>2</p></div>
+                    <div class="item" style="grid-area: 3 / 1 / 6 / 5;"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Grid defined with individual fractions</h3>
+                <div class="container"
+                style="
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr">
+                    <div class="item" style="grid-area: 1 / 1 / 3 / 3;"><p>1</p></div>
+                    <div class="item" style="grid-area: 3 / 3 / 1 / 7;"><p>2</p></div>
+                    <div class="item" style="grid-area: 3 / 1 / 6 / 5;"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>6 Columns 6 Rows Layering</h3>
+                <div class="container"
+                style="
+                grid-template-rows: repeat(6, minmax(0, 1fr));
+                grid-template-columns: repeat(6, minmax(0, 1fr));">
+                    <div class="item" style="grid-area: 1 / 1 / 3 / 5;"><p>1</p></div>
+                    <div class="item" style="grid-area: 2 / 4 / 4 / 6; z-index:1;"><p>2</p></div>
+                    <div class="item" style="grid-area: 3 / 1 / 7 / 7;"><p>3</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Implicit grid. Grid-auto-rows</h3>
+                <div class="container"
+                style="
+                grid-template-rows: repeat(6, minmax(0, 1fr));
+                grid-template-columns: repeat(6, minmax(0, 1fr));
+                grid-auto-rows: minmax(0, 1fr);">
+                    <div class="item" style="grid-area: 1 / 1 / 3 / 7;"><p>1</p></div>
+                    <div class="item" style="grid-area: 2 / 4 / 4 / 6; z-index:1;"><p>2</p></div>
+                    <div class="item" style="grid-area: 3 / 1 / 7 / 7;"><p>3</p></div>
+                    <div class="item" ><p>4</p></div>
+                </div>
+            </div>
+            <div>
+                <h3>Implicit grid. Grid auto flow column</h3>
+                <div class="container"
+                style="
+                grid-template-rows: repeat(6, minmax(0, 1fr));
+                grid-template-columns: repeat(6, minmax(0, 1fr));
+                grid-auto-rows: minmax(0, 1fr);
+                grid-auto-flow:column;">
+                    <div class="item" style="grid-area: 1 / 1 / 3 / 7;"><p>1</p></div>
+                    <div class="item" style="grid-area: 2 / 4 / 4 / 6; z-index:1;"><p>2</p></div>
+                    <div class="item" style="grid-area: 3 / 1 / 7 / 7;"><p>3</p></div>
+                    <div class="item" ><p>4</p></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Grid template areas</h3>
+                <div class="container"
+                style="
+                grid-template-rows: repeat(3, minmax(0, 1fr));
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                grid-template-areas: 
+                    'header header header'
+                    'nav main main'
+                    'footer footer footer';">
+                    <div class="item" style="grid-area: header;"><p>1</p></div>
+                    <div class="item" style="grid-area: main;"><p>2</p></div>
+                    <div class="item" style="grid-area: nav;"><p>3</p></div>
+                    <div class="item" style="grid-area: footer;"><p>4</p></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

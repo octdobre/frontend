@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CSS Layout with Absolute and Relative</title>
+    </head>
+
+    <body>
+
+        <div class="parent">
+            <p>Position absolute will pe positioned relative to the closes positioned ancestor.
+                Position relative elements will contain the position absolute elements.
+                It is removed from the document flow.
+                Body is always position relative.
+                Position absolute always require position defined.
+            </p>
+            <div class="child"><p>Normal positon.</p></div>
+            <p>Position relative element will be positioned relative to its original position.</p>
+            <div class="child_absolute_top"><p>Totally absolute.</p></div>
+            <div class="child_absolute_bottom"><p>Totally absolute.</p></div>
+            <div class="child_absolute_half"><p>Totally absolute.</p></div>
+        </div>
+
+        <div class="parent2">
+            <div class="child_absolute_half"><p>Totally absolute.</p></div>
+        </div>
+
+        <style>
+            .parent {
+                background-color: aquamarine;
+                height: 640px;
+                width: 640px;
+                padding: 1em;
+            }
+
+            .child {
+                background-color: darkorange;
+                width: 60px;
+                height: 60px;
+            }
+
+            .child_absolute_top {
+                background-color: red;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                top:0;
+                left:0;
+            }
+
+            .child_absolute_bottom {
+                background-color: red;
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                bottom:0;
+                left:0;
+            }
+
+            .child_absolute_half {
+                background-color: red;
+                position: absolute;
+                top:0;
+                bottom:0;
+                left:50%;
+                right:0;
+                opacity: 0.5;
+            }
+
+            .parent2 {
+                background-color: cornflowerblue;
+                height: 640px;
+                width: 640px;
+                padding: 1em;
+                position:relative;
+            }
+        </style>
+    </body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Layout with Block and Inline</title>
+    </head>
+    <body>
+        <div id="blockdiv">
+            <h1>Block</h1>
+            <h3>Block elements always go on top of each other even if they have room to go next to one another.
+                Default width is 100% which means they take up all the available space.
+            </h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </div>
+
+        <div id="inlinediv">
+            <h1>Inline</h1>
+            <h3>
+                Inline elements occupy all of the space.
+                Inline elements such as a cannot be assigned a height.
+            </h3>
+
+            <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
+            <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
+            <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
+        </div>
+
+
+        <div id="blocktoinlinediv">
+            <h1>Block elements changed to inline</h1>
+            <h3>Paragraph elements are by default block but can be changed to inline.
+            </h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </div>
+
+        <div id="inlinetoblockdiv">
+            <h1>Inline element changed to block</h1>
+            <h3>Anchor elements are by default inline
+            </h3>
+            <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
+            <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
+            <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
+        </div>
+
+
+        <div id="inlineblock">
+            <h1>Inline block</h1>
+            <h3>Inline block go next to one another untill the space is filled.
+                Ability to set margin and padding.
+            </h3>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+            <a href="" class="btn">I'm a link</a>
+            <a href="" class="btn">I'm also a link</a>
+            <a href="" class="btn">I'm a different link</a>
+        </div>>
+
+        <style>
+            #blockdiv {
+                background-color: bisque;
+                width: 640px;
+            }
+
+            #blockdiv p {
+                outline: 3px solid red;
+                width: 50%;
+            }
+
+            #inlinediv {
+                background-color: cornflowerblue;
+                width: 640px;
+            }
+
+            #inlinediv p {
+                outline: 3px solid red;
+                width: 50%;
+            }
+
+            #inlinediv a {
+                outline: 3px solid red;
+                height: 100px;   /*ignored*/
+                margin-top: 200px;  /*ignored*/
+                margin-bottom: 200px;  /*ignored*/
+            }
+
+            #blocktoinlinediv {
+                background-color: darkkhaki;
+                width: 640px;
+            }
+
+            #blocktoinlinediv p {
+                outline: 3px solid red;
+                width: 50%;
+                display: inline;
+            }
+
+            #inlinetoblockdiv {
+                background-color: lightgreen;
+                width: 640px;
+            }
+
+            #inlinetoblockdiv a {
+                outline: 3px solid red;
+                width: 50%;
+                display: block;
+            }
+
+            #inlineblock {
+                background-color: lightcoral;
+                width: 640px;
+            }
+
+            .btn {
+                display: inline-block;
+                background-color: lightblue;
+                color: black;
+                padding: 40px 80px;
+                text-decoration: none;
+            }
+
+            .btn:hover{
+                background-color: darkblue;
+                color:white;
+            }
+
+        </style>
+    </body>
+</html>

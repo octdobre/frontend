@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Selectors</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h2>Element selector</h2>
+        <p>Once upon a time...</p>
+
+        <h2>Id select</h2>
+        <span id="latest-news-span">News!</span>
+
+        <h2>Class selector</h2>
+        <a class="link_type" href="www.google.com">Google</a>
+
+        <h2>Descendant selector</h2>
+        <div class="parent">
+            <p>Child 1</p>
+            <p>Child 2</p>
+        </div>
+
+        <h2>Child selector</h2>
+        <div class="parent">
+            <p>Child 1</p>
+            <p>Child 2</p>
+            <div>
+                <p>Child 3</p>
+            </div>
+        </div>
+
+        <h2>General sibling selector</h2>
+        <div class="parent2">
+            <p>Child 1</p>
+            <p>Child 2</p>
+            <div>
+                <p>Child 3</p>
+            </div>
+            <div>
+                <h3>Heading 3</h3>
+                <p>Child 3</p>
+            </div>
+        </div>
+
+        <h2>Adjacent sibling selector</h2>
+        <div class="parent3">
+            <div><h3>Heading 3</h3></div>
+            <p>Child 1</p>
+            <p>Child 2</p>
+        </div>
+
+        <h2>Pseudo selectors</h2>
+        <button class="button-blue">Click me!</button>
+
+
+        <p class="selection-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+        <h2>Attribute selector</h2>
+        <div class="attribute-parent">
+            <a href="www.google.com">Google</a>
+            <a class="link_type" href="www.google.com">Google</a>
+            <a class="link_type" href="www.google.com">Google</a>
+        </div>
+
+        <h2>Nth selector even</h2>
+        <ul class="number-list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+
+        <h2>Specific position based selector</h2>
+        <ul class="number-list2">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+
+    </body>
+</html>

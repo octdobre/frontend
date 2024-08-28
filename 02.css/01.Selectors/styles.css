@@ -1,0 +1,120 @@
+/* element selectors */
+
+p {
+    color :blue;
+}
+
+/* id selectors */
+#latest-news-span {
+    color:rgb(53, 170, 88);
+}
+
+/* class selectors */
+.link_type {
+    color:red;
+}
+
+/* descendant selector -> all*/
+
+.parent p{
+    color:coral;
+}
+
+/* child selector -> direct children*/
+
+.parent > p{
+    color:blue;
+}
+
+/* general sibling selector - must be sibling of element*/
+.parent2 h3 ~ p{
+    color:red;
+}
+
+/* adjacent sibling selector - must be sibling of element*/
+.parent3 div + p {
+    color:red;
+}
+
+/*pseudo class selectors*/
+
+.button-blue {
+    background-color: blue;
+    color:white;
+    width:200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.button-blue:hover {
+    background-color: cornflowerblue;
+    color:white;
+    width:200px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.button-blue:active {
+    background-color: darkblue;
+    color:white;
+    width:190px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.button-blue:focus {
+    background-color: blue;
+    outline: 1px solid red;
+    color:white;
+    width:200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.button-blue:focus:active {
+    background-color: darkblue;
+    color:white;
+    width:190px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.selection-text
+{
+    max-width: 400px;
+}
+
+.selection-text::selection {
+    color:brown;
+    background-color: antiquewhite;
+    line-height: 1;
+}
+
+/*all a elements with a class under the class attribute-parent */
+.attribute-parent a[class]{
+    color:darkgreen;
+}
+
+
+/* every even number of items in the list */
+.number-list li:nth-child(even) {
+    color:aqua;
+}
+
+
+/* position based selectors */
+.number-list2 li:first-of-type{
+    color:aqua;
+}
+
+.number-list2 li:nth-of-type(2){
+    color:red;
+}
+
+.number-list2 li:nth-last-of-type(2){
+    color:blue;
+}
+
+.number-list2 li:last-of-type{
+    color:gold;
+}
