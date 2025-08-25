@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Responsive layout
+        </title>
+    </head>
+    <body class="flex-column">
+        <div class="main-container flex-column">
+            <header class="purple">
+                HEADER
+            </header>
+            <div class="content flex-row">
+                <aside class="left orange m-5">
+                    LEFT
+                </aside>
+                <main class="green m-5">
+                    MAIN
+                </main>
+    
+                <aside class="right blue m-5">
+                    RIGHT
+                </aside>
+            </div>
+        </div>
+        <footer class="yellow m-5">
+            FOOTER
+        </footer>
+
+        <style>
+
+            /* General */
+
+            *, *::before, *::after {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: sans-serif;
+                font-size: 1.3rem;
+                color: #fff;
+                text-align: center;
+            }
+
+            body {
+                background-color: #34e7e4;
+                height: 100vh;
+            }
+
+            .m-5 {
+                margin: 5px;
+            }
+
+            .flex-column {
+                display:flex;
+                flex-direction: column;
+            }
+
+            .flex-row {
+                display:flex;
+            }
+
+            /* Colors */
+
+            .purple {
+                background-color: rebeccapurple;
+            }
+
+            .orange {
+                background-color: orangered;
+            }
+
+            .green {
+                background-color: green;
+            }
+
+            .blue {
+                background-color: blue;
+            }
+
+            .deeppink{
+                background-color: deeppink;
+            }
+
+            .yellow {
+                background-color: rgb(240, 166, 7);
+            }
+
+            /* Layout */
+
+            .main-container {
+                flex:1;
+            }
+
+            .content {
+                flex:1;
+            }
+
+            header {
+                padding: 2em 0 2em 0;
+            }
+
+            .left {
+                flex:1 1 100px;
+                padding: 3em 0 3em 0;
+            }
+
+            main {
+                flex:5 5 100px;
+                padding: 3em 0 3em 0;
+            }
+
+            .right {
+                flex:1 1 100px;
+                padding: 3em 0 3em 0;
+            }
+
+            footer {
+                padding: 1em 0 1em 0;
+            }
+
+            @media all and (max-width:550px){
+
+                .content{
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </body>
+</html>

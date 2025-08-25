@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#">Lucky shrub</a>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Address</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <header>
+                <div class="content">
+                    <h1>Lucky Shrub</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        , when an unknown printer took a galley of type and scrambled it to make a 
+                        type specimen book. It has survived not only five centuries, but also the 
+                        leap into electronic typesetting, remaining essentially unchanged. It was 
+                        popularised in the 1960s with the release of Letraset sheets containing 
+                        Lorem Ipsum passages, and more recently with desktop publishing software
+                        like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </header>
+
+            <section class="services">
+                <div class="section">
+                    <h3>Content Header</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        , when an unknown printer took a galley of type and scrambled it to make a 
+                        type specimen book. It has survived not only five centuries, but also the 
+                        leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <div class="section2">
+                    <h3>Content Header</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        , when an unknown printer took a galley of type and scrambled it to make a 
+                        type specimen book. It has survived not only five centuries, but also the 
+                        leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <div class="section">
+                    <h3>Content Header</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        , when an unknown printer took a galley of type and scrambled it to make a 
+                        type specimen book. It has survived not only five centuries, but also the 
+                        leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+            </section>
+            
+            <section class="contact">
+                <div class="main-content">
+                    <div class="left">
+                        <h1>Form to fill</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            , when an unknown printer took a galley of type and scrambled it to make a 
+                            type specimen book. It has survived not only five centuries, but also the 
+                            leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                    <div class="right">
+                        <img src="https://previews.123rf.com/images/studioaccendo/studioaccendo2305/studioaccendo230552187/205114692-iguane-color%C3%A9-sur-fond-sombre-illustration-3d.jpg">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="copyright">
+                <p>&copy; Lucky Shrub</p>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">X</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+
+    <style>
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            font-family: 'Lucida Sans';
+            height:100%;
+            display: flex;
+            flex-direction: column;
+            border-top:8px solid blue;
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: #f2f2f2;
+            padding: 15px;
+            display:flex;
+        }
+
+        .container {
+            flex:1;
+        }
+
+        nav .logo {
+            flex:2;
+        }
+
+        nav .logo a {
+            flex:1;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        nav .navigation {
+            flex:1;
+            text-align: right;
+        }
+
+        nav .navigation ul li {
+            display:inline-block;
+        }
+
+        nav .navigation ul li a{
+            color:#333;
+        }
+
+        /* Header */
+
+        header {
+            padding: 40px 15px;
+            text-align:center;
+            background: linear-gradient(to right #fffde4, #005aa7);
+            display:flex;
+            justify-content: center;
+        }
+
+        header .content{
+            max-width: 900px;
+
+        }
+
+        /*Services*/
+
+        .services {
+            padding: 40px 15px;
+            display:flex;
+        }
+
+        .services .section {
+            flex:1;
+            padding:0px 15px;
+        }
+
+        .services .section2 {
+            flex:2;
+        }
+
+        /* Footer */
+        .contact {
+            padding: 40px 15px;
+            display:flex;
+            justify-content: center;
+        }
+
+        .contact .main-content {
+            max-width: 900px;
+            display:flex;
+        }
+
+        .contact .left {
+            flex:1;
+        }
+
+        .contact .left p {
+            margin-bottom: 20px;
+        }
+
+        .contact .right {
+            flex:1;
+        }
+
+
+        .contact .right img{
+            max-width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        /*Footer */
+        
+        footer {
+            display: flex;
+            background-color: #111;
+            padding: 15px;
+        }
+
+        footer .copyright {
+            flex:1;
+            color: #005aa7;
+        }
+
+        footer .social-media {
+            flex:1;
+            text-align: right;
+        }
+
+        footer .social-media ul li {
+            display:inline-block;
+        }
+
+        footer .social-media ul li a {
+            color:#005aa7;
+            text-decoration: none;
+            margin-right:10px;
+        }
+    </style>
+</html>

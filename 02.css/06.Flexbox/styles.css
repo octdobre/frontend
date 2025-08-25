@@ -45,12 +45,20 @@
 }
 
 
-.item-fixed-50-width {
+.item-w-50 {
     width: 50px;
 }
 
-.item-fixed-50-height {
+.item-h-50 {
     height: 50px;
+}
+
+.item-min-width-50 {
+    min-width: 50px;
+}
+
+.item-min-height-50 {
+    min-height: 50px;
 }
 
 .item-width-100 {

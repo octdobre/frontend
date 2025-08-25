@@ -21,7 +21,7 @@
             <h1>Inline</h1>
             <h3>
                 Inline elements occupy all of the space.
-                Inline elements such as a cannot be assigned a height.
+                Inline elements such as "a" cannot be assigned a height or width.
             </h3>
 
             <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -31,7 +31,6 @@
             <a>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
         </div>
-
 
         <div id="blocktoinlinediv">
             <h1>Block elements changed to inline</h1>
@@ -57,10 +56,10 @@
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. </a>
         </div>
 
-
         <div id="inlineblock">
             <h1>Inline block</h1>
             <h3>Inline block go next to one another untill the space is filled.
+                Width can be assigned but height still not.
                 Ability to set margin and padding.
             </h3>
 
@@ -74,7 +73,53 @@
             <a href="" class="btn">I'm a link</a>
             <a href="" class="btn">I'm also a link</a>
             <a href="" class="btn">I'm a different link</a>
-        </div>>
+        </div>
+
+        <div class="boxdiv">
+            <h1>Examples using blocks
+            </h1>
+            <h3>Elements groups have same dimensions.</h3>
+            <h3>Shrink width of browser window to observe inline block elements movement!</h3>
+
+            <div>
+                <h3>Block elements</h3>
+                <div class="box1">aaaaaa</div>
+                <div class="box2">bbbbbb</div>
+                <div class="box3">cccccc</div>
+
+                <h3>Block elements with inline display</h3>
+                <div class="box1 displayline">aaaaaa</div>
+                <div class="box2 displayline">bbbbbb</div>
+                <div class="box3 displayline">cccccc</div>
+
+                <br>
+
+                <h3>Block elements with inline-block display</h3>
+                <div class="box1 displaylineblock">aaaaaa</div>
+                <div class="box2 displaylineblock">bbbbbb</div>
+                <div class="box3 displaylineblock">cccccc</div>
+            </div>
+            <div>
+                <h3>Inline elements</h3>
+                <span class="inbox1">aaaaaa</span>
+                <span class="inbox2">bbbbbb</span>
+                <span class="inbox3">cccccc</span>
+
+                <br>
+
+                <h3>Inline elements as display block</h3>
+                <span class="inbox1 displayblock">aaaaaa</span>
+                <span class="inbox2 displayblock">bbbbbb</span>
+                <span class="inbox3 displayblock">cccccc</span>
+
+                <br>
+
+                <h3>Inline elements as display inline block</h3>
+                <span class="inbox1 displaylineblock">aaaaaa</span>
+                <span class="inbox2 displaylineblock">bbbbbb</span>
+                <span class="inbox3 displaylineblock">cccccc</span>
+            </div>
+        </div>
 
         <style>
             #blockdiv {
@@ -144,6 +189,59 @@
                 color:white;
             }
 
+
+            .boxdiv {
+                background-color: lightblue;
+            }
+
+            .box1 {
+                width:100px;
+                height: 70px;
+                background-color: red;
+            }
+
+            .box2 {
+                width: 120px;
+                height: 90px;
+                background-color: green;
+            }
+
+            .box3 {
+                width:150px;
+                height: 120px;
+                background-color: blue;
+            }
+
+            .displayline {
+                display: inline;
+            }
+
+            .displaylineblock {
+                display: inline-block;
+            }
+
+            .displayblock {
+                display: block;
+            }
+
+            .inbox1 {
+                width:100px;
+                height: 70px;
+                background-color: yellow;
+            }
+
+            .inbox2 {
+                width: 120px;
+                height: 90px;
+                background-color: cyan;
+            }
+
+
+            .inbox3 {
+                width:150px;
+                height: 120px;
+                background-color: magenta;
+            }
         </style>
     </body>
 </html>

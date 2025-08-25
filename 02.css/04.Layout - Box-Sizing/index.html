@@ -1,0 +1,78 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div class="content-box">
+        content box spills outside
+    </div>
+    <div class="scale">
+
+    </div>
+    <div class="border-box">
+        border box stays withing element
+        <br>
+        both padding and border included
+    </div>
+
+    <br>
+    <div class="outline">
+        <div class="boxmodel">Lorem ipsum</div>
+    </div>
+    
+    
+    <style>
+        /* One variant for universel setting.
+        *, *::before, *::after { box-sizing: border-box; } */
+
+        /* Another variant for universal setting.
+        *, *::before, *::after { box-sizing: inherit; }
+
+        html {
+            box-sizing: border-box;
+        }
+        */
+
+        .content-box {
+            width: 500px;
+            height: 100px;
+            background-color: #4dfff3;
+
+            padding:20px;
+            border:5px solid red;
+            box-sizing: content-box;
+        }
+
+        .scale {
+            width: 500px;
+            height: 100px;
+            background-color: #615756;
+        }
+
+        .border-box{
+            width: 500px;
+            height: 100px;
+            background-color: #52ffb8;
+
+            padding:20px;
+            border:5px solid red;
+            box-sizing: border-box;
+        }
+
+        .boxmodel {
+            box-sizing: border-box;
+            font-size: 24px;
+            color:white;
+            background-color: red;
+            padding:20px;
+            border:20px solid blue;
+            margin:20px;
+        }
+
+        .outline {
+            outline: 2px dotted green;
+            overflow: hidden;
+        }
+    </style>
+</body>
+</html>

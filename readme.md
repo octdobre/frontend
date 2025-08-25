@@ -46,6 +46,7 @@
         - VPS(Virtual Private Server)
 
 ### Documentation
+
 [What is a browser](https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/)
 
 [Who invented the internet](https://youtu.be/21eFwbb48sE)
@@ -105,9 +106,12 @@ Book: `Introduction to Networking by Dr.Charles R Severance`
         - fieldset, input type="radio"
 
 ### Documentation
+
 [Overview of HTML Elements](https://web.dev/learn/html/overview)
 
 [HTML Forms by Mozila](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form)
+
+[HTML Forms Input by Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 
 [Client-Side Forms validation](https://www.sitepoint.com/client-side-form-validation-html5/)
 
@@ -176,6 +180,15 @@ Book: `HTML and CSS: Design and build websites by Jon Duckett`
             - 12 or 6 track layout frameworks
             - Cell
             - Gutter
+    * Effects
+        - Text Effects
+            - wrap, overflow, glow, vertical
+        - Animations
+            - transform
+            - transition
+            - @keyframes
+                - from, to
+                - percentages
     * Bootstrap
         - Reusable Components
         - Infixes
@@ -185,6 +198,12 @@ Book: `HTML and CSS: Design and build websites by Jon Duckett`
         - 12-Columns Grid-System
             - Fluid or Fixed
         - `Container` root element
+    * Preprocessors
+        - sass, scss, Stylus, LESS, PostCSS
+        - SASS
+            - @mixin, @include
+    * Keyword
+        - !important
 
 ### Documentation
 
@@ -200,11 +219,15 @@ Book: `HTML and CSS: Design and build websites by Jon Duckett`
 
 [Flexbox video overview](https://www.youtube.com/watch?v=phWxA89Dy94)
 
+[Flexbox game](https://flexboxfroggy.com/)
+
 [Grid visual guide](https://learncssgrid.com/)
 
 [Grid video overview](https://www.youtube.com/watch?v=EiNiSFIPIQE)
 
 [Grid podcast](https://web.dev/learn/css/grid/)
+
+[Grid game](https://cssgridgarden.com/)
 
 [Bootstrap](https://getbootstrap.com/docs)
 
@@ -213,6 +236,22 @@ Book: `HTML and CSS: Design and build websites by Jon Duckett`
 [Tailwind](https://tailwindcss.com/)
 
 [UI KIT](https://getuikit.com/)
+
+[Complete guide to CSS Transformations](https://www.lambdatest.com/blog/css-transforms-and-transitions-property/)
+
+[38 Effects to spice up your Website](https://uicookies.com/css-text-effects/)
+
+[100 CSS Animations](https://freefrontend.com/css-animation-examples/)
+
+[StyleLint CSS synthax checker](https://stylelint.io/)
+
+[CSS Browser compatibility tool](https://caniuse.com/)
+
+[CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+[12 common CSS mistakes](https://www.webfx.com/blog/web-design/12-common-css-mistakes-web-developers-make/)
+
+[Choosing a color scheem](https://www.moving.com/tips/how-to-choose-a-color-scheme-for-your-home/)
 
 Book: `CSS: The Definitive Guide: Visual Presentation for the Web by Eric Meyer`
 

@@ -1,0 +1,66 @@
+.elipsis-show-on-hover {
+    width: 200px;
+    border:2px solid red;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.elipsis-show-on-hover:hover {
+    width: 200px;
+    border:2px solid red;
+    
+    white-space: nowrap;
+    overflow:visible;
+}
+
+
+.clip-show-on-hover {
+    width: 200px;
+    border:2px solid red;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.clip-show-on-hover:hover {
+    width: 200px;
+    border:2px solid red;
+    
+    white-space: nowrap;
+    overflow:visible;
+}
+
+.vertical-text {
+    border:2px solid red;
+    writing-mode: vertical-lr;
+}
+
+.text-wrap {
+    width: 50px;
+    border:2px solid red;
+    word-wrap: break-word;
+}
+
+.text-shadow {
+    text-shadow: 0 0 30px green,
+        0 0 10px black;
+}
+
+.text-glow {
+    color: rgb(237, 237, 151);
+    text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 31px #fff,
+        0 0 51px rgb(255,226,4),
+        0 0 91px rgb(255,226,4),
+        0 0 100px rgb(255,226,4),
+        0 0 122px rgb(255,226,4),
+        0 0 140px rgb(255,226,4),;
+
+    font-family: 'Papyrus';
+    font-size: 25px;
+}

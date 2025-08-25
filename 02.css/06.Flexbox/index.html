@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox Example</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Flex container is one dimentional.</h1>
+        <h2>Items flow along the vertical axis by default or when out of horizontal space to move to the next row.</h2>
+        <p>
+            display:flex. Enable a flex container.<br>
+            justify-content. For item alignment on main axis (horizontal).<br>
+            align-items. For item alignment on cross axis (vertical).<br>
+            <hr>
+            flex-wrap: For item wrapping on the next row.<br>
+            align-content. Used for packing flex lines and control over space.<br>
+            flex-direction. For specifiying if items aling on rows or columns.<br>
+            flex-flow. Combines flex-direction and flex-wrap into one property.<br>
+            flex-gap. For adding a gap between items. Use this instead of margin.<br>
+            align-self. For uniquelu aligning flex items on cross axis.<br>
+            order. For manually ordering items.<br>
+            <hr>
+            flex-grow. Specifies how fast an item grows compared to the other items in the flex container.<br>
+            flex-shrink. Specifies how fast an item shrinks compared to the other items in the flex container.<br>
+            flex-basis. Specifies the size after which grow or shink is applied to the item.<br>
+            flex. Combines flex-grow, flex-shrink and flex-basis into one property.
+        </p>
+
+      <div>
+        <h1>No flexbox</h1>
+        <h2>Display is block by default. Items align on a column like blocks on top of each other.</h2>
+        <div class="container-size container_color">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex Default behaviour</h1>
+        <h2>Items align on a row called the main axis (horizontal).</h2>
+        <h2>Item width 50px and height 50px.</h2>
+        <div class="container-size container_color" style="display: flex;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex-Direction Row Reversed</h1>
+        <h2>Items align reversed on a row called the main axis (horizontal).</h2>
+        <div class="container-size container_color" style="display: flex; flex-direction: row-reverse;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex-Direction Column</h1>
+        <h2>Items align on a column called the cross axis (vertical).</h2>
+        <div class="container-size container_color" style="display: flex; flex-direction: column;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex-Direction Column Reversed</h1>
+        <h2>Items align reversed on a column called the cross axis (vertical).</h2>
+        <div class="container-size container_color" style="display: flex; flex-direction: column-reverse;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Items 100% width</h1>
+        <div class="container-size container_color" style="display: flex;">
+            <div class="item-width-100 item-h-50 item-red"> </div>
+            <div class="item-width-100 item-h-50 item-blue"> </div>
+            <div class="item-width-100 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Items 100% width and height</h1>
+        <div class="container-size container_color" style="display: flex;">
+            <div class="item-width-100 item-height-100 item-red"> </div>
+            <div class="item-width-100 item-height-100 item-blue"> </div>
+            <div class="item-width-100 item-height-100 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex units</h1>
+        <h2>Items align on a row. Item takes up units of spaces.</h2>
+        <div class="container-size container_color" style="display: flex;">
+            <div class="item-width-100 item-height-100 item-red flex-unit-1"> </div>
+            <div class="item-width-100 item-height-100 item-blue flex-unit-2"> </div>
+            <div class="item-width-100 item-height-100 item-green flex-unit-1"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Justify-Content Flex-Start</h1>
+        <h2>Align items on main axis.</h2>
+        <h2>Main axis is horizontal if flow-direction is row.</h2>
+        <h2>Main axis is vertical if flow-direction is column.</h2>
+        <div class="container-size container_color" style="display: flex; justify-content: flex-start;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify-Content Flex-End</h1>
+        <div class="container-size container_color" style="display: flex; justify-content: flex-end;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify-Content Center</h1>
+        <div class="container-size container_color" style="display: flex; justify-content: center;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify-Content Space-Between</h1>
+        <h2>Space between the items is evenly distributed.</h2>
+        <div class="container-size container_color" style="display: flex; justify-content: space-between">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify-Content Space-Around</h1>
+        <h2>Space around the items is equal on all sides.</h2>
+        <h2>Space between the items is double because each item has a space around it.</h2>
+        <div class="container-size container_color" style="display: flex; justify-content: space-around">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify-Content Space-Evenly</h1>
+        <h2>Space around and between is the same and not doubled.</h2>
+        <div class="container-size container_color" style="display: flex; justify-content: space-evenly;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Align-Items Flex-Start</h1>
+        <div class="container-size container_color" style="display: flex; align-items: flex-start;">
+          <div class="item-w-50 item-red" style="min-height: 1.5rem;"> a</div>
+          <div class="item-w-50 item-blue" style="min-height: 2.5rem;"> b</div>
+          <div class="item-w-50 item-green" style="min-height: 2rem;"> c</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Items Flex-End</h1>
+        <div class="container-size container_color" style="display: flex; align-items: flex-end;">
+          <div class="item-w-50 item-red" style="min-height: 1.5rem;"> a</div>
+          <div class="item-w-50 item-blue" style="min-height: 2.5rem;"> b</div>
+          <div class="item-w-50 item-green" style="min-height: 2rem;"> c</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Items Center</h1>
+        <div class="container-size container_color" style="display: flex; align-items: center;">
+          <div class="item-w-50 item-red" style="min-height: 1.5rem;"> a</div>
+          <div class="item-w-50 item-blue" style="min-height: 2.5rem;"> b</div>
+          <div class="item-w-50 item-green" style="min-height: 2rem;"> c</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Items Stretch</h1>
+        <div class="container-size container_color" style="display: flex; align-items: stretch;">
+          <div class="item-w-50 item-red" style="min-height: 1.5rem;"> a</div>
+          <div class="item-w-50 item-blue" style="min-height: 2.5rem;"> b</div>
+          <div class="item-w-50 item-green" style="min-height: 2rem;"> c</div>
+        </div>
+      </div>
+      <div>
+        <h1>Align-Items Baseline</h1>
+        <h2>Aligns the content of the elements.</h2>
+        <h2>Letters are aligned.</h2>
+        <div class="container-size container_color" style="display: flex; align-items: baseline;">
+          <div class="item-w-50 item-red" style="min-height: 1.5rem; padding:15px;"> a</div>
+          <div class="item-w-50 item-blue" style="min-height: 2.5rem; padding:30px; "> b</div>
+          <div class="item-w-50 item-green" style="min-height: 2rem; padding:5px; font-size: 30px;"> c</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Justify-Content Center Align-Items Center</h1>
+        <h2>Align items aligns on cross axis (vertical).</h2>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: center; align-items: center;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Justify-Content Center Align-Items End</h1>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: center; align-items: flex-end;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex-Direction column Justify-Content Center Align-Items Center </h1>
+        <h2>Flex-Direction specifies if items align horizontal (main) or vertical (cross).</h2>
+        <h2>Items align on the cross axis.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex-Direction Column Justify-Content Center Align-Items End </h1>
+        <h2>Items align on the cross axis.</h2>
+        <h2>Columns aligned left to right.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: center; align-items: flex-end; flex-direction: column;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex-Gap</h1>
+        <div class="container-size container_color" 
+        style="display: flex; gap: 1em;;">
+            <div class="item-w-50 item-h-50 item-red"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex-Wrap</h1>
+        <h2>Items go to the next row when there is no more space available.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-red"> 7</div>
+            <div class="item-w-50 item-h-50 item-blue"> 8</div>
+            <div class="item-w-50 item-h-50 item-green"> 9</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Content Flex-Start</h1>
+        <h2>When Flex-Wrap is enabled, then items align and occupy all of the space.</h2>
+        <h2>Different than align-items.</h2>
+        <h2>Flex wrap unlocks a new property called align content.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; flex-wrap: wrap; align-content: flex-start;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-green">7 </div>
+            <div class="item-w-50 item-h-50 item-red"> 8</div>
+            <div class="item-w-50 item-h-50 item-blue"> 9</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Content Flex-End</h1>
+        <div class="container-size container_color" 
+        style="display: flex; flex-wrap: wrap; align-content: flex-end;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-green">7 </div>
+            <div class="item-w-50 item-h-50 item-red"> 8</div>
+            <div class="item-w-50 item-h-50 item-blue"> 9</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Content Center</h1>
+        <div class="container-size container_color" 
+        style="display: flex; flex-wrap: wrap; align-content: center;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-green">7 </div>
+            <div class="item-w-50 item-h-50 item-red"> 8</div>
+            <div class="item-w-50 item-h-50 item-blue"> 9</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Content Stretch</h1>
+        <div class="container-size container_color" 
+        style="display: flex; flex-wrap: wrap; align-content: stretch;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-green">7 </div>
+            <div class="item-w-50 item-h-50 item-red"> 8</div>
+            <div class="item-w-50 item-h-50 item-blue"> 9</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Content Space-Between</h1>
+        <div class="container-size container_color" 
+        style="display: flex; flex-wrap: wrap; align-content: space-between;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-green">7 </div>
+            <div class="item-w-50 item-h-50 item-red"> 8</div>
+            <div class="item-w-50 item-h-50 item-blue"> 9</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Align-Content Space-Around</h1>
+        <div class="container-size container_color" 
+        style="display: flex; flex-wrap: wrap; align-content: space-around;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-green">7 </div>
+            <div class="item-w-50 item-h-50 item-red"> 8</div>
+            <div class="item-w-50 item-h-50 item-blue"> 9</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex-Flow Row</h1>
+        <h2>Shorthand for flex direction and flex wrap.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; flex-flow: row wrap; align-content: flex-start;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-red"> 7</div>
+            <div class="item-w-50 item-h-50 item-blue"> 8</div>
+            <div class="item-w-50 item-h-50 item-green"> 9</div>
+        </div>
+      </div>
+      <div>
+        <h1>Flex-Flow Column</h1>
+        <div class="container-size container_color" 
+        style="display: flex; flex-flow: column wrap; align-content: flex-start;">
+            <div class="item-w-50 item-h-50 item-red"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue"> 2</div>
+            <div class="item-w-50 item-h-50 item-green"> 3</div>
+            <div class="item-w-50 item-h-50 item-red"> 4</div>
+            <div class="item-w-50 item-h-50 item-blue"> 5</div>
+            <div class="item-w-50 item-h-50 item-green"> 6</div>
+            <div class="item-w-50 item-h-50 item-red"> 7</div>
+            <div class="item-w-50 item-h-50 item-blue"> 8</div>
+            <div class="item-w-50 item-h-50 item-green"> 9</div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Align self</h1>
+        <h2>Allows individual item to align themselves.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; ">
+            <div class="item-w-50 item-h-50 item-red" style="align-self: flex-end;"> </div>
+            <div class="item-w-50 item-h-50 item-blue"> </div>
+            <div class="item-w-50 item-h-50 item-green"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Order</h1>
+        <h2>Allows individual item to order themselves.</h2>
+        <div class="container-size container_color" 
+        style="display: flex; ">
+            <div class="item-w-50 item-h-50 item-red" style="order:3"> 1</div>
+            <div class="item-w-50 item-h-50 item-blue">2 </div>
+            <div class="item-w-50 item-h-50 item-green">3 </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex-Grow</h1>
+        <h2>Allows individual item to grow if there is space to do so.</h2>
+        <div class="container-size container_color" 
+        style="display: flex;">
+            <div class="item-min-width-50 item-h-50 item-red" style="flex-grow: 1;"> 1</div>
+            <div class="item-min-width-50 item-h-50 item-blue" style="flex-grow: 3;"> 3</div>
+            <div class="item-min-width-50 item-h-50 item-green" style="flex-grow: 1;"> 1</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex-Grow</h1>
+        <h2>Item set with flex-grow grows up to all of the available space.</h2>
+        <h2>The higher the number the faster it grows compared to other items.</h2>
+        <h2>Slowly shrink and grow the browser window to observe the behaviour.</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+        <div class="item-h-50 item-red" style="flex-basis:50px; flex-grow:1;"> 1</div>
+        <div class="item-h-50 item-blue" style="flex-basis:50px; flex-grow:2;"> 2</div>
+        <div class="item-h-50 item-green" style="flex-basis:50px; flex-grow:3;"> 3</div>
+        <div class="item-h-50 item-red" style="flex-basis:50px; flex-grow:2;"> 4</div>
+        <div class="item-h-50 item-blue" style="flex-basis:50px; flex-grow:1;"> 5</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex-Grow fixed(0)</h1>
+        <h2>Item refuses to grow beyond value set in flex-basis.</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+            <div class="item-h-50 item-red" style="flex-basis: 400px;"> </div>
+            <div class="item-h-50 item-blue" style="flex-basis: 400px;"> </div>
+            <div class="item-h-50 item-green" style="flex-basis: 200px; flex-grow: 0;"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex-Shrink</h1>
+        <h2>Defines how fast an item shrinks compared to others.</h2>
+        <h2>It is reversed as grow. The higher the number the faster it shrinks.</h2>
+        <h2>Slowly shrink the browser window to observe the behaviour.</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex; justify-content: space-between;">
+            <div class="item-h-50 item-red" style="flex-basis:200px; flex-shrink:1;"> 1</div>
+            <div class="item-h-50 item-blue" style="flex-basis:200px; flex-shrink:2;"> 2</div>
+            <div class="item-h-50 item-green" style="flex-basis:200px; flex-shrink:3;"> 3</div>
+            <div class="item-h-50 item-red" style="flex-basis:200px; flex-shrink:2;"> 4</div>
+            <div class="item-h-50 item-blue" style="flex-basis:200px; flex-shrink:1;"> 5</div>
+        </div>
+      </div>
+
+      <div>
+        <h1>Flex-Shrink fixed(0)</h1>
+        <h2>Defines how much an item can shrink.</h2>
+        <h2>Starts shrinking the items once they are 400 or less pixels.</h2>
+        <h2>Slowly shrink the browser window to observe the behaviour.</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+            <div class="item-h-50 item-red" style="flex-basis:400px;"> </div>
+            <div class="item-h-50 item-blue" style="flex-basis:400px;"> </div>
+            <div class="item-h-50 item-green" style="flex-basis:200px; flex-shrink: 0;"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex shorthand</h1>
+        <h2>Flex property defines grow, shrink and baseline.</h2>
+        <h2>flex: 1 1 400px;</h2>
+        <div class="container-size container_color" 
+        style="width: 100%; display: flex;">
+            <div class="item-h-50 item-red" style="width: 400px;"> </div>
+            <div class="item-h-50 item-blue" style="width: 400px;"> </div>
+            <div class="item-h-50 item-green" style="width: 400px; flex: 1 1 400px;"> </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Flex-Flow Responsive layout</h1>
+        <h2>Flex-Flow combines flex-direction and flex-wrap.</h2>
+        <h2>Flex-Basis defines how much an item can shrink before it gets wrapped on a new row.</h2>
+        <div class="container-size container_color" 
+        style="width:100%; display: flex; flex-flow:row wrap; align-content: flex-start;">
+          <div class="item-h-50 item-red" style="flex-grow:1; flex-shrink:1; flex-basis:25ch;">12345678901234567890123456</div>
+          <div class="item-h-50 item-blue" style="flex: 1 1 25ch;"> 2</div>
+          <div class="item-h-50 item-green" style="flex: 1 1 25ch;"> 3</div>
+          <div class="item-h-50 item-red" style="flex: 1 1 25ch;"> 4</div>
+          <div class="item-h-50 item-blue" style="flex: 1 1 25ch;"> 5</div>
+          <div class="item-h-50 item-green" style="flex: 1 1 25ch;"> 6</div>
+        </div>
+      </div>
+    </body>
+</html>
